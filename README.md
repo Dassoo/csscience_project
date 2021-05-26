@@ -1,6 +1,6 @@
 # Computational and Social Science project - Pericles
 
-<img src="https://user-images.githubusercontent.com/78917927/112463405-7a1d8b00-8d62-11eb-87cc-245b0c61046d.jpg" width="90%"></img> 
+<img src="https://github.com/Dassoo/csscience_project/blob/main/images/Marina_singing_before_Pericles_(Stothard,_1825).jpg?raw=true" width="90%"></img> 
 
 This is the project related to the final exam of the "Computational and Social Science" course in Ca' Foscari University, Venice, carried out by Federico Dassiè.
 
