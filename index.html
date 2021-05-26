@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.min.js"></script>
+<!---
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+--->
+<title>CSScience Project</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />  
+
+	
+</head>
+<body>
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#">CSScience Project</a></h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="index.html" accesskey="1" title="">Home</a></li>
+					<li><a href="https://github.com/Dassoo/comput_sscience/blob/main/README.md" accesskey="2" title="">Readme</a></li>
+				</ul>
+			</div>
+		</div>
+	<div id="banner" class="container">
+		<div class="title">
+			<h2>test11111</h2>
+		</div>
+	</div>
+	<div class="container">
+		<div class="title">
+			<span class="byline">bla bla bla</span>
+		</div>
+	</div>
+    <div class="container">
+        <canvas id="myChart"></canvas>
+    </div>
+    <script>
+        var myChart = document.getElementById('myChart').getContext('2d');
+        var massPopChart = new Chart(myChart, {
+            type:'bar', //bar, horizontalBar, pie, line, doughnut, radar, polarArea
+            data:{
+                labels:['Boston','Worcester','Springfield','Lowell','Cambridge','New Bedford'],
+                datasets:[{
+                    label: 'Population',
+                    data:[
+                        617594,
+                        181045,
+                        154669,
+                        123441,
+                        78922,
+                        50939
+                    ]
+                }]
+            },
+            options:{} 
+        });
+    </script>
+
+</div>
+
+
+
+
+</body>
+</html>
