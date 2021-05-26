@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.min.js"></script>
+<!---
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+--->
+<title>CSScience Project</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />  
+
+	
+</head>
+<body>
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#">CSScience Project</a></h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="index.html" accesskey="1" title="">Home</a></li>
+					<li><a href="https://github.com/Dassoo/comput_sscience/blob/main/README.md" accesskey="2" title="">Readme</a></li>
+                    <li><a href="https://colab.research.google.com/drive/1qC4j5-C2xyjrVuWtXA8sawOkQQq5lnjK?usp=sharing" accesskey="3" title="">Colab data</a></li>
+				</ul>
+			</div>
+		</div>
+	<div id="banner" class="container">
+		<div class="title">
+			<h2>Pericles</h2>
+		</div>
+	</div>
+	<div class="container">
+		<div class="title">
+			<span class="byline">Analysis about all the people (speakers) of the narrative.</span> 
+		</div> 
+            You can click on the labels to filter data and hover your mouse for precise numbers.
+	</div>
+
+    
+    <div class="container">
+        <canvas id="myChart2" height="400"></canvas>
+    </div>
+
+    <div>
+        <script>
+            var myChart2 = document.getElementById('myChart2').getContext('2d');
+            var massPopChart2 = new Chart(myChart2, {
+                type:'bar', //bar, horizontalBar, pie, line, doughnut, radar, polarArea
+                data:{
+                    labels:['Antiochus','All','Both','Boult','Bawd','Cerimon','Cleon','Diana','Dionyza','Daughter','Escanes','First Fisherman','First Gentleman','First Knight',
+                    'First Lord','First Pirate','First Sailor','First Servant','Gower','Helicanus','Knights','Leonine','Lychorida','Lysimachus','Lord','Marina','Marshal',
+                    'Messenger','Pericles','Philemon','Pandar','Simonides','Second Fisherman','Second Gentleman','Second Knight','Second Lord','Second Pirate','Second Sailor',
+                    'Servant','Thaisa','Thailard','Third Fisherman','Third Knight','Third Lord','Third Pirate','Tyrian Sailor'],
+                    datasets:[{
+                        label: 'Closeness centrality',
+                        data:[
+                            0.46,
+                            0.51,
+                            0.49,
+                            0.40,
+                            0.40,
+                            0.56,
+                            0.48,
+                            0.54,
+                            0.53,
+                            0.46,
+                            0.40,
+                            0.45,
+                            0.58,
+                            0.51,
+                            0.58,
+                            0.42,
+                            0.45,
+                            0.43,
+                            0.53,
+                            0.60,
+                            0.49,
+                            0.41,
+                            0.45,
+                            0.56,
+                            0.48,
+                            0.62,
+                            0.49,
+                            0.46,
+                            0.78,
+                            0.43,
+                            0.40,
+                            0.53,
+                            0.45,
+                            0.43,
+                            0.49,
+                            0.51,
+                            0.41,
+                            0.45,
+                            0.43,
+                            0.65,
+                            0.47,
+                            0.45,
+                            0.49,
+                            0.46,
+                            0.41,
+                            0.54
+                        ],
+                        backgroundColor: 'rgba(54, 162, 235, 0.6)'
+                        /*backgroundColor:[
+                            'rgba(255, 99, 132, 0.6)',
+                            'rgba(54, 162, 235, 0.6)',
+                            'rgba(255, 206, 86, 0.6)',
+                            'rgba(75, 192, 192, 0.6)',
+                            'rgba(153, 102, 255, 0.6)'
+                        ]*/,
+                        borderWidth:1,
+                        borderColor:'#111',
+                        hoverBorderWidth:2,
+                        hoverBorderColor:'#000'
+                    },
+                    {
+                        label: 'Eigenvector centrality',
+                        data:[
+                            0.05,
+                            0.14,
+                            0.12,
+                            0.06,
+                            0.06,
+                            0.19,
+                            0.07,
+                            0.16,
+                            0.11,
+                            0.05,
+                            0.09,
+                            0.05,
+                            0.24,
+                            0.15,
+                            0.25,
+                            0.06,
+                            0.05,
+                            0.10,
+                            0.13,
+                            0.27,
+                            0.12,
+                            0.12,
+                            0.05,
+                            0.05,
+                            0.18,
+                            0.07,
+                            0.26,
+                            0.12,
+                            0.05,
+                            0.40,
+                            0.10,
+                            0.06,
+                            0.20,
+                            0.05,
+                            0.10,
+                            0.12,
+                            0.17,
+                            0.05,
+                            0.05,
+                            0.10,
+                            0.33,
+                            0.08,
+                            0.05,
+                            0.12,
+                            0.13,
+                            0.05,
+                            0.16
+                        ],
+                        backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                        borderWidth:1,
+                        borderColor:'#111',
+                        hoverBorderWidth:2,
+                        hoverBorderColor:'#000'
+                    },
+                    {
+                        label: 'Degree centrality',
+                        data:[
+                            0.09,
+                            0.20,
+                            0.13,
+                            0.11,
+                            0.11,
+                            0.22,
+                            0.09,
+                            0.15,
+                            0.20,
+                            0.09,
+                            0.11,
+                            0.07,
+                            0.28,
+                            0.20,
+                            0.28,
+                            0.17,
+                            0.07,
+                            0.13,
+                            0.11,
+                            0.33,
+                            0.13,
+                            0.11,
+                            0.07,
+                            0.22,
+                            0.09,
+                            0.39,
+                            0.13,
+                            0.09,
+                            0.72,
+                            0.13,
+                            0.11,
+                            0.26,
+                            0.07,
+                            0.13,
+                            0.13,
+                            0.17,
+                            0.11,
+                            0.07,
+                            0.13,
+                            0.46,
+                            0.11,
+                            0.07,
+                            0.13,
+                            0.15,
+                            0.11,
+                            0.15
+                        ],
+                        backgroundColor: 'rgba(255, 206, 86, 0.6)',
+                        borderWidth:1,
+                        borderColor:'#111',
+                        hoverBorderWidth:2,
+                        hoverBorderColor:'#000'
+                    }
+                ]
+                },
+                options:{
+                    indexAxis: 'y',
+                    title:{
+                        display: false,
+                        text: 'Pericles - Data analytics',
+                        fontSize:25
+                    },
+                    legend:{
+                        display: true,
+                        position: 'bottom',
+                        labels:{
+                            //fontColor: '#000'
+                        }
+                    },
+                    layout:{
+                        padding:{
+                            left:0,
+                            right:0,
+                            bottom:50,
+                            top:100
+                        }
+                    },
+                    tooltips:{
+                        enabled:true
+                    }
+                } 
+            });
+        </script>
+        </div>
+
+    <div class="container">
+        <div class="title">
+            <span class="byline">Test</span>
+        </div>
+    <div>
+
+    <div class="container">    
+        <div id="openseadragon" style="width: 800px; height: 600px;"></div>
+        <script src="https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/openseadragon.min.js"></script>
+        <script type="text/javascript">
+            var viewer = OpenSeadragon({
+                id: "openseadragon",
+                prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/images/",
+                tileSources:   [{
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://raw.githubusercontent.com/Dassoo/csscience_project/main/images/plot.png",
+                  "height": 1814,
+                  "width": 2534,
+                  "profile": [ "http://iiif.io/api/image/2/level2.json" ],
+                  "protocol": "http://iiif.io/api/image",
+                  "tiles": [{
+                    "scaleFactors": [ 1, 2, 4, 8, 16, 32 ],
+                    "width": 1024
+                  }]
+                }]
+            });
+        </script>
+    </div>
+
+    <div id="copyright" class="container">
+	    <p>&copy; All rights reserved. | Made by <a href="https://github.com/Dassoo" rel="nofollow">Federico Dassiè</a>.</p>
+    </div>
+
+</body>
+</html>

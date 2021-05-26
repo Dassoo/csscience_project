@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.min.js"></script>
+<!---
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+--->
+<title>CSScience Project</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />  
+
+	
+</head>
+<body>
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#">CSScience Project</a></h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="index.html" accesskey="1" title="">Home</a></li>
+					<li><a href="https://github.com/Dassoo/comput_sscience/blob/main/README.md" accesskey="2" title="">Readme</a></li>
+                    <li><a href="https://colab.research.google.com/drive/1qC4j5-C2xyjrVuWtXA8sawOkQQq5lnjK?usp=sharing" accesskey="3" title="">Colab data</a></li>
+				</ul>
+			</div>
+		</div>
+	<div id="banner" class="container">
+		<div class="title">
+			<h2>Pericles</h2>
+		</div>
+	</div>
+	<div class="container">
+		<div class="title">
+			<span class="byline">Analysis about all the single acts of the narrative.</span> 
+		</div> 
+            You can click on the labels to filter data and hover your mouse for precise numbers.
+	</div>
+
+    
+    <div class="container">
+        <canvas id="myChart"></canvas>
+        <canvas id="myChart3"></canvas>
+    </div>
+
+    <div>
+    <script>
+        var myChart = document.getElementById('myChart').getContext('2d');
+        var massPopChart = new Chart(myChart, {
+            type:'bar', //bar, horizontalBar, pie, line, doughnut, radar, polarArea
+            data:{
+                labels:['Act 1','Act 2','Act 3','Act 4','Act 5'],
+                datasets:[{
+                    label: 'Density',
+                    data:[
+                        0.4090909090909091,
+                        0.3684210526315789,
+                        0.38461538461538464,
+                        0.32967032967032966,
+                        0.7272727272727273,
+                    ],
+                    backgroundColor: 'rgba(153, 102, 255, 0.6)'
+                    /*backgroundColor:[
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)'
+                    ]*/,
+                    borderWidth:1,
+                    borderColor:'#111',
+                    hoverBorderWidth:2,
+                    hoverBorderColor:'#000'
+                },
+                {
+                    label: 'Average clustering',
+                    data:[
+                        0.8881313131313132,
+                        0.8603896103896105,
+                        0.9538461538461539,
+                        0.6047052154195011,
+                        0.9090909090909091,
+                    ],
+                    backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                    borderWidth:1,
+                    borderColor:'#111',
+                    hoverBorderWidth:2,
+                    hoverBorderColor:'#000'
+                }
+            ]
+            },
+            options:{
+                title:{
+                    display: false,
+                    text: 'Pericles - Data analytics',
+                    fontSize:25
+                },
+                legend:{
+                    display: true,
+                    position: 'bottom',
+                    labels:{
+                        //fontColor: '#000'
+                    }
+                },
+                layout:{
+                    padding:{
+                        left:0,
+                        right:0,
+                        bottom:0,
+                        top:50
+                    }
+                },
+                tooltips:{
+                    enabled:true
+                }
+            } 
+        });
+    </script>
+    </div>
+    
+        <div>
+            <script>
+                var myChart3 = document.getElementById('myChart3').getContext('2d');
+                var massPopChart3 = new Chart(myChart3, {
+                    type:'line', //bar, horizontalBar, pie, line, doughnut, radar, polarArea
+                    data:{
+                        labels:['Act 1','Act 2','Act 3','Act 4','Act 5'],
+                        datasets:[{
+                            label: 'Cliques',
+                            data:[
+                                4,
+                                5,
+                                3,
+                                6,
+                                2
+                            ],
+                            backgroundColor: 'rgba(54, 162, 235, 0.6)'
+                            /*backgroundColor:[
+                                'rgba(255, 99, 132, 0.6)',
+                                'rgba(54, 162, 235, 0.6)',
+                                'rgba(255, 206, 86, 0.6)',
+                                'rgba(75, 192, 192, 0.6)',
+                                'rgba(153, 102, 255, 0.6)'
+                            ]*/,
+                            borderWidth:3,
+                            borderColor:'rgba(54, 162, 235, 0.6)',
+                        },
+                        {
+                            label: 'Speakers',
+                            data:[
+                                12,
+                                19,
+                                13,
+                                14,
+                                11
+                            ],
+                            backgroundColor: 'rgba(153, 102, 255, 0.6)'
+                            /*backgroundColor:[
+                                'rgba(255, 99, 132, 0.6)',
+                                'rgba(54, 162, 235, 0.6)',
+                                'rgba(255, 206, 86, 0.6)',
+                                'rgba(75, 192, 192, 0.6)',
+                                'rgba(153, 102, 255, 0.6)'
+                            ]*/,
+                            borderWidth:3,
+                            borderColor:'rgba(153, 102, 255, 0.6)',
+                        }
+                    ]
+                    },
+                    options:{
+                        title:{
+                            display: false,
+                            text: 'Pericles - Data analytics',
+                            fontSize:25
+                        },
+                        legend:{
+                            display: true,
+                            position: 'bottom',
+                            labels:{
+                                //fontColor: '#000'
+                            }
+                        },
+                        layout:{
+                            padding:{
+                                left:0,
+                                right:0,
+                                bottom:100,
+                                top:100
+                            }
+                        },
+                        tooltips:{
+                            enabled:true
+                        }
+                    } 
+                });
+            </script>
+            </div>
+    
+
+    <div class="container">
+        <div class="title">
+            <span class="byline">Test</span>
+        </div>
+    <div>
+
+    <div id="copyright" class="container">
+	    <p>&copy; All rights reserved. | Made by <a href="https://github.com/Dassoo" rel="nofollow">Federico Dassiè</a>.</p>
+    </div>
+
+</body>
+</html>

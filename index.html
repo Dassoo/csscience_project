@@ -27,80 +27,32 @@
 				<ul>
 					<li><a href="index.html" accesskey="1" title="">Home</a></li>
 					<li><a href="https://github.com/Dassoo/csscience_project/blob/main/README.md" accesskey="2" title="">Readme</a></li>
+                    <li><a href="https://colab.research.google.com/drive/1qC4j5-C2xyjrVuWtXA8sawOkQQq5lnjK?usp=sharing" accesskey="3" title="">Colab data</a></li>
 				</ul>
 			</div>
 		</div>
 	<div id="banner" class="container">
 		<div class="title">
-			<h2>test11111</h2>
+			<h2>Pericles</h2>
 		</div>
 	</div>
 	<div class="container">
 		<div class="title">
-			<span class="byline">bla bla bla</span>
-		</div>
+			<span class="byline">Data analytics on Shakespeare's Jacobean play "Pericles, Prince of Tyre", elaborating XML data using Python on Google Colab and showing them through Chart.js. 
+                This is a project carried out for the final exam in Computational and Social Science.</span> 
+		</div> 
 	</div>
-    <div class="container">
-        <canvas id="myChart"></canvas>
+
+    <div class="container"> 
+        <div class="row">
+          <div> <a href="people.html" class="button">Speakers</a> </div>
+          <div> <a href="acts.html" class="button">Acts</a> </div>
+        </div>
+    </div>      
+
+    <div id="copyright" class="container">
+	    <p>&copy; All rights reserved. | Made by <a href="https://github.com/Dassoo" rel="nofollow">Federico Dassiè</a>.</p>
     </div>
-    <script>
-        var myChart = document.getElementById('myChart').getContext('2d');
-
-        //Global options
-        Chart.defaults.global.defaultFontFamily = 'Lato',
-        Chart.defaults.global.defaultFontSize = '18',
-        Chart.defaults.global.defaultFontColor = '#777'
-
-        var massPopChart = new Chart(myChart, {
-            type:'bar', //bar, horizontalBar, pie, line, doughnut, radar, polarArea
-            data:{
-                labels:['Boston','Worcester','Springfield','Lowell','Cambridge','New Bedford'],
-                datasets:[{
-                    label: 'Population',
-                    data:[
-                        617594,
-                        181045,
-                        154669,
-                        123441,
-                        78922,
-                        50939
-                    ],
-                    //backgroundColor: 'white'
-                    backgroundColor:[
-                        'rgba(255, 99, 132, 0.6)',
-                        'rgba(54, 162, 235, 0.6)',
-                        'rgba(255, 206, 86, 0.6)',
-                        'rgba(75, 192, 192, 0.6)',
-                        'rgba(153, 102, 255, 0.6)',
-                        'rgba(255, 159, 64, 0.6)'
-                    ],
-                    borderWidth:1,
-                    borderColor:'#777',
-                    hoverBorderWidth:2,
-                    hoverBorderColor:'#000'
-                }]
-            },
-            options:{
-                title:{
-                    display:true,
-                    text: 'Largest cities in Massachussets',
-                    fontSize:25
-                },
-                legend:{
-                    //display: false,
-                    position: 'bottom',
-                    labels:{
-                        //fontColor: '#000'
-                    }
-                }
-            } 
-        });
-    </script>
-
-</div>
-
-
-
 
 </body>
 </html>
