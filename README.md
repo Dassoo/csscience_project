@@ -10,4 +10,5 @@ Tools used:
   > Google Colab: https://colab.research.google.com// <br />
   > Visual Studio Code: https://code.visualstudio.com/ <br />
   > Chart.js: https://www.chartjs.org/ <br />
+  > Cytoscape.js: https://js.cytoscape.org/ <br />
   > GitHub: https://github.com/ <br />
