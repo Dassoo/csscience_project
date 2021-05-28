@@ -4,6 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.18.2/cytoscape.min.js"></script>
 <!---
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 --->
@@ -40,12 +41,18 @@
 		<div class="title">
 			<span class="byline">Analysis about all the people (speakers) of the narrative.</span> 
 		</div> 
-            You can click on the labels to filter data and hover your mouse for precise numbers.
+        <div class="container"> 
+            <div class="row">
+              <div> <a href="connections.html" class="button">Connections</a> </div>
+            </div>
+        </div>    
+            <br><br>You can click on the labels to filter data and hover your mouse for precise numbers.
 	</div>
 
     
     <div class="container">
         <canvas id="myChart2" height="400"></canvas>
+        <canvas id="myChart4"></canvas>
     </div>
 
     <div>
@@ -270,6 +277,64 @@
             <span class="byline">Test</span>
         </div>
     <div>
+
+    <div>
+            <script>
+                var myChart4 = document.getElementById('myChart4').getContext('2d');
+                var massPopChart4 = new Chart(myChart4, {
+                    type:'line', //bar, horizontalBar, pie, line, doughnut, radar, polarArea
+                    data:{
+                        labels:['Act 1','Act 2','Act 3','Act 4','Act 5'],
+                        datasets:[{
+                            label: 'Total speakers ',
+                            data:[
+                                12,
+                                26,
+                                35,
+                                45,
+                                47
+                            ],
+                            backgroundColor: 'rgba(75, 192, 192, 0.6)'
+                            /*backgroundColor:[
+                                'rgba(255, 99, 132, 0.6)',
+                                'rgba(54, 162, 235, 0.6)',
+                                'rgba(255, 206, 86, 0.6)',
+                                'rgba(75, 192, 192, 0.6)',
+                                'rgba(153, 102, 255, 0.6)'
+                            ]*/,
+                            borderWidth:3,
+                            borderColor:'rgba(75, 192, 192, 0.6)',
+                        }
+                    ]
+                    },
+                    options:{
+                        title:{
+                            display: false,
+                            text: 'Pericles - Data analytics',
+                            fontSize:25
+                        },
+                        legend:{
+                            display: true,
+                            position: 'bottom',
+                            labels:{
+                                //fontColor: '#000'
+                            }
+                        },
+                        layout:{
+                            padding:{
+                                left:0,
+                                right:0,
+                                bottom:100,
+                                top:100
+                            }
+                        },
+                        tooltips:{
+                            enabled:true
+                        }
+                    } 
+                });
+            </script>
+    </div>
 
     <!--    
     <div class="container">    
