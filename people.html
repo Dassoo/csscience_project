@@ -22,7 +22,7 @@
 	<div id="header-wrapper">
 		<div id="header" class="container">
 			<div id="logo">
-				<h1><a href="#">CSScience Project</a></h1>
+				<h1><a href="index.html">CSScience Project</a></h1>
 			</div>
 			<div id="menu">
 				<ul>
@@ -43,10 +43,23 @@
 		</div> 
         <div class="container"> 
             <div class="row">
-              <div> <a href="connections.html" class="button">Connections</a> </div>
+              <div> <a href="connections.html" class="button">Connection graphs</a> </div>
             </div>
         </div>    
-            <br><br>You can click on the labels to filter data and hover your mouse for precise numbers.
+            <br><br>You can click on the labels to filter data and hover your mouse for precise numbers.<br><br>
+            <div class="container">
+                <figure class="quote">
+                <blockquote>
+                <span class="byline"><b>Closeness centrality</b> (or closeness) of a node is a measure of centrality in a network, calculated as the reciprocal of the sum of the length of the shortest paths between the node and all other nodes in the graph. 
+                    Thus, the more central a node is, the closer it is to all other nodes.<br><br>
+                    <b>Eigenvector centrality</b> (also called eigencentrality) is a measure of the influence of a node in a network. 
+                    It assigns relative scores to all nodes in the network based on the concept that connections to high-scoring nodes contribute more to the score of the node in question than equal connections to low-scoring nodes.<br><br>
+                    <b>Degree centrality</b> is defined as the number of links incident upon a node (i.e., the number of ties that a node has).
+                    The degree can be interpreted in terms of the immediate risk of a node for catching whatever is flowing through the network.
+                </span>
+                </blockquote>
+                </figure>
+            <div>
 	</div>
 
     
@@ -260,7 +273,7 @@
                         padding:{
                             left:0,
                             right:0,
-                            bottom:50,
+                            bottom:0,
                             top:100
                         }
                     },
@@ -272,28 +285,245 @@
         </script>
         </div>
 
-    <div class="container">
-        <div class="title">
-            <span class="byline">Test</span>
-        </div>
     <div>
-
-    <div>
-            <script>
+        <script>
                 var myChart4 = document.getElementById('myChart4').getContext('2d');
                 var massPopChart4 = new Chart(myChart4, {
                     type:'line', //bar, horizontalBar, pie, line, doughnut, radar, polarArea
                     data:{
-                        labels:['Act 1','Act 2','Act 3','Act 4','Act 5'],
+                        labels:['Antiochus','All','Both','Boult','Bawd','Cerimon','Cleon','Diana','Dionyza','Daughter','Escanes','First Fisherman','First Gentleman','First Knight',
+                        'First Lord','First Pirate','First Sailor','First Servant','Gower','Helicanus','Knights','Leonine','Lychorida','Lysimachus','Lord','Marina','Marshal',
+                        'Messenger','Pericles','Philemon','Pandar','Simonides','Second Fisherman','Second Gentleman','Second Knight','Second Lord','Second Pirate','Second Sailor',
+                        'Servant','Thaisa','Thailard','Third Fisherman','Third Knight','Third Lord','Third Pirate','Tyrian Sailor'],
                         datasets:[{
-                            label: 'Total speakers ',
+                            label: 'Total connections',
                             data:[
-                                12,
-                                26,
-                                35,
-                                45,
-                                47
-                            ],
+                                4,
+                                9,
+                                6,
+                                5,
+                                5,
+                                10,
+                                4,
+                                7,
+                                9,
+                                4,
+                                5,
+                                3,
+                                13,
+                                8,
+                                13,
+                                8,
+                                3,
+                                6,
+                                5,
+                                15,
+                                6,
+                                5,
+                                3,
+                                10,
+                                4,
+                                18,
+                                5,
+                                4,
+                                32,
+                                6,
+                                5,
+                                11,
+                                3,
+                                6,
+                                6,
+                                8,
+                                5,
+                                3,
+                                6,
+                                20,
+                                5,
+                                3,
+                                6,
+                                7,
+                                5,
+                                7                            ],
+                            backgroundColor: 'rgba(54, 162, 235, 0.6)'
+                            /*backgroundColor:[
+                                'rgba(255, 99, 132, 0.6)',
+                                'rgba(54, 162, 235, 0.6)',
+                                'rgba(255, 206, 86, 0.6)',
+                                'rgba(75, 192, 192, 0.6)',
+                                'rgba(153, 102, 255, 0.6)'
+                            ]*/,
+                            borderWidth:3,
+                            borderColor:'rgba(54, 162, 235, 0.6)',
+                        },
+                        {
+                            label: 'Act 1',
+                            data:[
+                                4,
+                                4,
+                                0,
+                                0,
+                                0,
+                                0,
+                                4,
+                                0,
+                                4,
+                                4,
+                                0,
+                                0,
+                                0,
+                                0,
+                                3,
+                                0,
+                                0,
+                                0,
+                                0,
+                                4,
+                                0,
+                                0,
+                                0,
+                                0,
+                                4,
+                                0,
+                                0,
+                                4,
+                                11,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                3,
+                                0,
+                                0,
+                                0,
+                                0,
+                                5,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0                            ],
+                            backgroundColor: 'rgba(255, 99, 132, 0.6)'
+                            /*backgroundColor:[
+                                'rgba(255, 99, 132, 0.6)',
+                                'rgba(54, 162, 235, 0.6)',
+                                'rgba(255, 206, 86, 0.6)',
+                                'rgba(75, 192, 192, 0.6)',
+                                'rgba(153, 102, 255, 0.6)'
+                            ]*/,
+                            borderWidth:3,
+                            borderColor:'rgba(255, 99, 132, 0.6)',
+                        },
+                        {
+                            label: 'Act 2',
+                            data:[
+                                0,
+                                5,
+                                6,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                5,
+                                3,
+                                0,
+                                8,
+                                5,
+                                0,
+                                0,
+                                0,
+                                0,
+                                6,
+                                5,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                5,
+                                0,
+                                11,
+                                0,
+                                0,
+                                11,
+                                3,
+                                0,
+                                6,
+                                8,
+                                0,
+                                0,
+                                0,
+                                20,
+                                0,
+                                3,
+                                6,
+                                7,
+                                0,
+                                0                            ],
+                            backgroundColor: 'rgba(255, 206, 86, 0.6)'
+                            /*backgroundColor:[
+                                'rgba(255, 99, 132, 0.6)',
+                                'rgba(54, 162, 235, 0.6)',
+                                'rgba(255, 206, 86, 0.6)',
+                                'rgba(75, 192, 192, 0.6)',
+                                'rgba(153, 102, 255, 0.6)'
+                            ]*/,
+                            borderWidth:3,
+                            borderColor:'rgba(255, 206, 86, 0.6)',
+                        },
+                        {
+                            label: 'Act 3',
+                            data:[
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                5,
+                                2,
+                                0,
+                                2,
+                                0,
+                                0,
+                                0,
+                                5,
+                                0,
+                                0,
+                                0,
+                                3,
+                                6,
+                                0,
+                                0,
+                                0,
+                                0,
+                                3,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                5,
+                                6,
+                                0,
+                                0,
+                                0,
+                                6,
+                                0,
+                                0,
+                                0,
+                                3,
+                                6,
+                                6,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0                            ],
                             backgroundColor: 'rgba(75, 192, 192, 0.6)'
                             /*backgroundColor:[
                                 'rgba(255, 99, 132, 0.6)',
@@ -304,6 +534,126 @@
                             ]*/,
                             borderWidth:3,
                             borderColor:'rgba(75, 192, 192, 0.6)',
+                        },
+                        {
+                            label: 'Act 4',
+                            data:[
+                                0,
+                                0,
+                                0,
+                                5,
+                                5,
+                                0,
+                                1,
+                                0,
+                                6,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                8,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                5,
+                                0,
+                                4,
+                                0,
+                                9,
+                                0,
+                                0,
+                                0,
+                                0,
+                                5,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                5,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                5,
+                                0                            ],
+                            backgroundColor: 'rgba(153, 102, 255, 0.6)'
+                            /*backgroundColor:[
+                                'rgba(255, 99, 132, 0.6)',
+                                'rgba(54, 162, 235, 0.6)',
+                                'rgba(255, 206, 86, 0.6)',
+                                'rgba(75, 192, 192, 0.6)',
+                                'rgba(153, 102, 255, 0.6)'
+                            ]*/,
+                            borderWidth:3,
+                            borderColor:'rgba(153, 102, 255, 0.6)',
+                        },
+                        {
+                            label: 'Act 5',
+                            data:[
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                5,
+                                0,
+                                7,
+                                0,
+                                0,
+                                0,
+                                0,
+                                7,
+                                0,
+                                0,
+                                7,
+                                0,
+                                0,
+                                0,
+                                5,
+                                10,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                10,
+                                0,
+                                0,
+                                10,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                6,
+                                0,
+                                0,
+                                0,
+                                0,
+                                7                            ],
+                            backgroundColor: 'rgba(45, 192, 55, 0.6)'
+                            /*backgroundColor:[
+                                'rgba(255, 99, 132, 0.6)',
+                                'rgba(54, 162, 235, 0.6)',
+                                'rgba(255, 206, 86, 0.6)',
+                                'rgba(75, 192, 192, 0.6)',
+                                'rgba(153, 102, 255, 0.6)'
+                            ]*/,
+                            borderWidth:3,
+                            borderColor:'rgba(45, 192, 55, 0.6)',
                         }
                     ]
                     },
@@ -333,34 +683,15 @@
                         }
                     } 
                 });
-            </script>
-    </div>
-
-    <!--    
-    <div class="container">    
-        <div id="openseadragon" style="width: 800px; height: 600px;"></div>
-        <script src="https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/openseadragon.min.js"></script>
-        <script type="text/javascript">
-            var viewer = OpenSeadragon({
-                id: "openseadragon",
-                prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/images/",
-                tileSources:   [{
-                  "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "https://github.com/Dassoo/csscience_project/blob/main/images/plot.png?raw=true",
-                  "height": 1814,
-                  "width": 2534,
-                  "profile": [ "http://iiif.io/api/image/2/level2.json" ],
-                  "protocol": "http://iiif.io/api/image",
-                  "tiles": [{
-                    "scaleFactors": [ 1, 2, 4, 8, 16, 32 ],
-                    "width": 1024
-                  }]
-                }]
-            });
         </script>
     </div>
-    -->
-
+    
+    <div class="container">
+        <span class="byline"> 
+            More details about speakers connections can be found <a href="connections.html">here</a>.
+        </span>
+    <div>
+    
     <div id="copyright" class="container">
 	    <p>&copy; All rights reserved. | Made by <a href="https://github.com/Dassoo" rel="nofollow">Federico Dassiè</a>.</p>
     </div>

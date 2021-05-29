@@ -45,7 +45,7 @@
 	
 	a
 	{
-		color: #ee0000;
+		color: #f4501e9f;
 	}
 	
 	a:hover
@@ -187,13 +187,17 @@
 		opacity: 0.8;
 		transition: 0.5s;
 		justify-content: center;
-		margin-right: 50px;
-		margin-left: 50px;
+		margin-right: 100px;
+		margin-left: 100px;
 		text-decoration: none;
 		cursor: pointer;
 		display: flex;
 	}
 	
+	.button:hover {
+		background-color: #c57368
+	}
+
 	.button-alt
 	{
 		padding: 1em 2em;
@@ -552,6 +556,17 @@
 	{
 		text-align: center;
 		color: rgba(0,0,0,.5);
+	}
+
+	.quote {
+		margin: 0;
+		background: rgba(73, 73, 73, 0.356);
+		padding: 1em;
+		border-radius: 1em;
+	}
+	  .quote figcaption,
+	  .quote blockquote {
+		margin: 1em;
 	}
 
 	#cy {
