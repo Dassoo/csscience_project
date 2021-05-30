@@ -280,7 +280,7 @@
 
 	.title
 	{
-		margin-bottom: 3em;
+		margin-bottom: 2em;
 	}
 	
 	.title h2
@@ -576,3 +576,44 @@
         top: 0px;
         left: 0px;
     }
+
+	.node {
+		cursor: pointer;
+	  }
+	
+	  .overlay{
+		  
+	  }
+	   
+	  .node circle {
+		fill: #fff;
+		stroke: steelblue;
+		stroke-width: 1.5px;
+	  }
+	   
+	  .node text {
+		font-size:10px; 
+		font-family:sans-serif;
+		fill: #fff;
+		stroke: rgba(255, 255, 255, 0.322);
+	  }
+	   
+	  .link {
+		fill: none;
+		stroke: rgba(204, 204, 204, 0.404);
+		stroke-width: 1.5px;
+	  }
+	
+	  .templink {
+		fill: none;
+		stroke: red;
+		stroke-width: 3px;
+	  }
+	
+	  .ghostCircle.show{
+		  display:block;
+	  }
+	
+	  .ghostCircle, .activeDrag .ghostCircle{
+		   display: none;
+	  }

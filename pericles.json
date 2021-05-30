@@ -1,0 +1,459 @@
+{
+    "name": "root",
+    "children": [{
+        "name": "Act 1",
+        "children": [{
+            "name": "All",
+            "children": [
+                { "name": "Cleon" }, 
+                { "name": "Dionyza" }, 
+                { "name": "Lord" }, 
+                { "name": "Pericles" }
+            ]
+        },
+        {
+            "name": "Antiochus",
+            "children": [
+                { "name": "Daughter" }, 
+                { "name": "Messenger" }, 
+                { "name": "Pericles" }, 
+                { "name": "Thaliard" }
+            ]
+        },
+        {
+            "name": "Cleon",
+            "children": [
+                { "name": "All" }, 
+                { "name": "Dionyza" }, 
+                { "name": "Lord" }, 
+                { "name": "Pericles" }
+            ]
+        },
+        {
+            "name": "Daughter",
+            "children": [
+                { "name": "Antiochus" }, 
+                { "name": "Messenger" }, 
+                { "name": "Pericles" }, 
+                { "name": "Thaliard" }
+            ]
+        },
+        {
+            "name": "Dionyza",
+            "children": [
+                { "name": "All" }, 
+                { "name": "Cleon" }, 
+                { "name": "Lord" }, 
+                { "name": "Pericles" }
+            ]
+        },
+        {
+            "name": "First Lord",
+            "children": [
+                { "name": "Helicanus" }, 
+                { "name": "Pericles" }, 
+                { "name": "Second Lord" }
+            ]
+        },
+        {
+            "name": "Helicanus",
+            "children": [
+                { "name": "First Lord" }, 
+                { "name": "Pericles" }, 
+                { "name": "Second Lord" }, 
+                { "name": "Thaliard" }
+            ]
+        },
+        {
+            "name": "Lord",
+            "children": [
+                { "name": "All" }, 
+                { "name": "Cleon" }, 
+                { "name": "Dionyza" }, 
+                { "name": "Pericles" }
+            ]
+        },
+        {
+            "name": "Messenger",
+            "children": [
+                { "name": "Antiochus" }, 
+                { "name": "Daughter" }, 
+                { "name": "Pericles" }, 
+                { "name": "Thaliard" }
+            ]
+        },
+        {
+            "name": "Pericles",
+            "children": [
+                { "name": "Antiochus" }, 
+                { "name": "Daughter" }, 
+                { "name": "Messenger" }, 
+                { "name": "First Lord" },
+                { "name": "Helicanus" },
+                { "name": "Second Lord" },
+                { "name": "All" },
+                { "name": "Cleon" },
+                { "name": "Dionyza" },
+                { "name": "Lord" }
+            ]
+        },
+        {
+            "name": "Second Lord",
+            "children": [
+                { "name": "Helicanus" }, 
+                { "name": "First Lord" }, 
+                { "name": "Pericles" }
+            ]
+        },
+        {
+            "name": "Thaliard",
+            "children": [
+                { "name": "Antiochus" }, 
+                { "name": "Daughter" }, 
+                { "name": "Messenger" }, 
+                { "name": "Pericles" },
+                { "name": "Helicanus" }
+            ]
+        }]
+    }, {
+        "name": "Act 2",
+        "children": [{
+            "name": "All",
+            "children": [
+                { "name": "Escanes" }, 
+                { "name": "First Lord" }, 
+                { "name": "Helicanus" }, 
+                { "name": "Second Lord" },
+                { "name": "Third Lord" }
+            ]
+        },
+        {
+            "name": "Both",
+            "children": [
+                { "name": "First Knight" }, 
+                { "name": "Pericles" }, 
+                { "name": "Simonides" }, 
+                { "name": "Second Knight" },
+                { "name": "Thaisa" },
+                { "name": "Third Knight" }
+            ]
+        },
+        {
+            "name": "Escanes",
+            "children": [
+                { "name": "All" }, 
+                { "name": "First Lord" }, 
+                { "name": "Helicanus" }, 
+                { "name": "Second Lord" },
+                { "name": "Third Lord" }
+            ]
+        },
+        {
+            "name": "First Fisherman",
+            "children": [
+                { "name": "Pericles" }, 
+                { "name": "Second Fisherman" }, 
+                { "name": "Third Fisherman" }
+            ]
+        },
+        {
+            "name": "First Knight",
+            "children": [
+                { "name": "Knights" }, 
+                { "name": "Marshal" }, 
+                { "name": "Pericles" }, 
+                { "name": "Simonides" },
+                { "name": "Thaisa" },
+                { "name": "Both" },
+                { "name": "Second Knight" },
+                { "name": "Third Knight" }
+            ]
+        },
+        {
+            "name": "First Lord",
+            "children": [
+                { "name": "Helicanus" }, 
+                { "name": "Pericles" }, 
+                { "name": "Second Lord" },
+                { "name": "Simonides" },
+                { "name": "Thaisa" }
+            ]
+        },
+        {
+            "name": "Helicanus",
+            "children": [
+                { "name": "First Lord" }, 
+                { "name": "Pericles" }, 
+                { "name": "Second Lord" }, 
+                { "name": "All" },
+                { "name": "Escanes" },
+                { "name": "Third Lord" }
+            ]
+        },
+        {
+            "name": "Knights",
+            "children": [
+                { "name": "First Knight" }, 
+                { "name": "Marshal" }, 
+                { "name": "Pericles" }, 
+                { "name": "Simonides" },
+                { "name": "Thaisa" }
+            ]
+        },
+        {
+            "name": "Marshal",
+            "children": [
+                { "name": "First Knight" }, 
+                { "name": "Knights" }, 
+                { "name": "Pericles" }, 
+                { "name": "Simonides" },
+                { "name": "Thaisa" }
+            ]
+        },
+        {
+            "name": "Pericles",
+            "children": [
+                { "name": "First Fisherman" }, 
+                { "name": "Second Fisherman" }, 
+                { "name": "Third Fisherman" }, 
+                { "name": "First Knight" },
+                { "name": "Knights" },
+                { "name": "Marshal" },
+                { "name": "Simonides" },
+                { "name": "Thaisa" },
+                { "name": "Both" },
+                { "name": "Second Knight" },
+                { "name": "Third Knight" }
+            ]
+        },
+        {
+            "name": "Simonides",
+            "children": [
+                { "name": "First Lord" }, 
+                { "name": "Second Lord" }, 
+                { "name": "Thaisa" },
+                { "name": "Third Lord" },
+                { "name": "First Knight" },
+                { "name": "Knights" },
+                { "name": "Marshal" },
+                { "name": "Pericles" },
+                { "name": "Both" },
+                { "name": "Second Knight" },
+                { "name": "Third Knight" }
+            ]
+        },
+        {
+            "name": "Second Fisherman",
+            "children": [
+                { "name": "First Fisherman" }, 
+                { "name": "Pericles" }, 
+                { "name": "Third Fisherman" }
+            ]
+        },
+        {
+            "name": "Second Knight",
+            "children": [
+                { "name": "Both" }, 
+                { "name": "First Knight" }, 
+                { "name": "Pericles" },
+                { "name": "Simonides" },
+                { "name": "Thaisa" },
+                { "name": "Third Knight" }
+            ]
+        },
+        {
+            "name": "Second Lord",
+            "children": [
+                { "name": "First Lord" }, 
+                { "name": "Helicanus" }, 
+                { "name": "Pericles" },
+                { "name": "Simonides" },
+                { "name": "Thaisa" },
+                { "name": "Third Lord" },
+                { "name": "All" },
+                { "name": "Escanes" }
+            ]
+        },
+        {
+            "name": "Thaisa",
+            "children": [
+                { "name": "First Lord" }, 
+                { "name": "Simonides" }, 
+                { "name": "Second Lord" },
+                { "name": "Third Lord" },
+                { "name": "First Knight" },
+                { "name": "Knights" },
+                { "name": "Marshal" },
+                { "name": "Pericles" },
+                { "name": "Both" },
+                { "name": "Second Knight" },
+                { "name": "Third Knight" }
+            ]
+        },
+        {
+            "name": "Third Fisherman",
+            "children": [
+                { "name": "First Fisherman" }, 
+                { "name": "Pericles" }, 
+                { "name": "Second Fisherman" }
+            ]
+        },
+        {
+            "name": "Third Knight",
+            "children": [
+                { "name": "First Lord" }, 
+                { "name": "Helicanus" }, 
+                { "name": "Pericles" },
+                { "name": "Simonides" },
+                { "name": "Thaisa" },
+                { "name": "Third Lord" },
+                { "name": "All" },
+                { "name": "Escanes" }
+            ]
+        },
+        {
+            "name": "Third Lord",
+            "children": [
+                { "name": "First Lord" }, 
+                { "name": "Simonides" }, 
+                { "name": "Second Lord" },
+                { "name": "Thaisa" },
+                { "name": "All" },
+                { "name": "Escanes" },
+                { "name": "Helicanus" }
+            ]
+        }]
+    }, {
+        "name": "Act 3",
+        "children": [{
+            "name": "Cerimon",
+            "children": [
+                { "name": "First Gentleman" }, 
+                { "name": "First Servant" }, 
+                { "name": "Philemon" }, 
+                { "name": "Second Gentleman" },
+                { "name": "Servant" }
+            ]
+        },
+        {
+            "name": "Cleon",
+            "children": [
+                { "name": "Dionyza" }, 
+                { "name": "Pericles" }
+            ]
+        },
+        {
+            "name": "Dionyza",
+            "children": [
+                { "name": "Cleon" }, 
+                { "name": "Pericles" }
+            ]
+        },
+        {
+            "name": "First Gentleman",
+            "children": [
+                { "name": "Cerimon" }, 
+                { "name": "First Servant" }, 
+                { "name": "Philemon" },
+                { "name": "Second Gentleman" },
+                { "name": "Servant" }
+            ]
+        },
+        {
+            "name": "First Sailor",
+            "children": [
+                { "name": "Lychorida" }, 
+                { "name": "Pericles" }, 
+                { "name": "Second Sailor" }
+            ]
+        },
+        {
+            "name": "First Servant",
+            "children": [
+                { "name": "Cerimon" }, 
+                { "name": "First Gentleman" }, 
+                { "name": "Philemon" },
+                { "name": "Second Gentleman" },
+                { "name": "Servant" },
+                { "name": "Thaisa" }
+            ]
+        },
+        {
+            "name": "Lychorida",
+            "children": [
+                { "name": "First Sailor" }, 
+                { "name": "Pericles" }, 
+                { "name": "Second Sailor" }
+            ]
+        },
+        {
+            "name": "Pericles",
+            "children": [
+                { "name": "Cleon" }, 
+                { "name": "Dionyza" }, 
+                { "name": "First Sailor" }, 
+                { "name": "Lychorida" },
+                { "name": "Second Sailor" }
+            ]
+        },
+        {
+            "name": "Philemon",
+            "children": [
+                { "name": "Cerimon" }, 
+                { "name": "First Gentleman" }, 
+                { "name": "First Servant" }, 
+                { "name": "Second Gentleman" },
+                { "name": "Servant" },
+                { "name": "Thaisa" }
+            ]
+        },
+        {
+            "name": "Second Gentleman",
+            "children": [
+                { "name": "Cerimon" }, 
+                { "name": "First Gentleman" }, 
+                { "name": "First Servant" }, 
+                { "name": "Philemon" },
+                { "name": "Servant" },
+                { "name": "Thaisa" }
+            ]
+        },
+        {
+            "name": "Second Sailor",
+            "children": [
+                { "name": "First Sailor" }, 
+                { "name": "Lychorida" }, 
+                { "name": "Pericles" }
+            ]
+        },
+        {
+            "name": "Servant",
+            "children": [
+                { "name": "Cerimon" }, 
+                { "name": "First Gentleman" }, 
+                { "name": "First Servant" },
+                { "name": "Philemon" },
+                { "name": "Second Gentleman" },  
+                { "name": "Thaisa" }
+            ]
+        },
+        {
+            "name": "Thaisa",
+            "children": [
+                { "name": "Cerimon" }, 
+                { "name": "First Gentleman" }, 
+                { "name": "First Servant" },
+                { "name": "Philemon" },
+                { "name": "Second Gentleman" },  
+                { "name": "Servant" }
+            ]
+        }]
+        }, 
+       {
+        "name": "Act 4"
+       },
+       {
+        "name": "Act 5"
+       }
+    ]
+}
