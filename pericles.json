@@ -450,10 +450,259 @@
         }]
         }, 
        {
-        "name": "Act 4"
-       },
+        "name": "Act 4",
+        "children": [{
+            "name": "Boult",
+            "children": [
+                { "name": "Bawd" }, 
+                { "name": "First Pirate" }, 
+                { "name": "Marina" }, 
+                { "name": "Pandar" },
+                { "name": "Lysimachus" }
+            ]
+        },
+        {
+            "name": "Bawd",
+            "children": [
+                { "name": "Boult" }, 
+                { "name": "First Pirate" }, 
+                { "name": "Marina" }, 
+                { "name": "Pandar" },
+                { "name": "Lysimachus" }
+            ]
+        },
+        {
+            "name": "Cleon",
+            "children": [
+                { "name": "Dionyza" }
+            ]
+        },
+        {
+            "name": "Dionyza",
+            "children": [
+                { "name": "Cleon" }, 
+                { "name": "First Pirate" }, 
+                { "name": "Leonine" }, 
+                { "name": "Marina" },
+                { "name": "Second Pirate" },
+                { "name": "Third Pirate" }
+            ]
+        },
+        {
+            "name": "First Gentleman",
+            "children": [
+                { "name": "Second Gentleman" }
+            ]
+        },
+        {
+            "name": "First Pirate",
+            "children": [
+                { "name": "Dionyza" }, 
+                { "name": "Leonine" }, 
+                { "name": "Marina" }, 
+                { "name": "Second Pirate" },
+                { "name": "Third Pirate" },
+                { "name": "Boult" },
+                { "name": "Bawd" },
+                { "name": "Pandar" }
+            ]
+        },
+        {
+            "name": "Leonine",
+            "children": [
+                { "name": "Dionyza" }, 
+                { "name": "First Pirate" }, 
+                { "name": "Marina" },
+                { "name": "Second Pirate" },
+                { "name": "Third Pirate" }
+            ]
+        },
+        {
+            "name": "Lysimachus",
+            "children": [ 
+                { "name": "Marina" }, 
+                { "name": "Bawd" },
+                { "name": "Boult" },
+                { "name": "Pandar" }
+            ]
+        },
+        {
+            "name": "Marina",
+            "children": [
+                { "name": "Dionyza" }, 
+                { "name": "Leonine" }, 
+                { "name": "Second Pirate" },
+                { "name": "Third Pirate" },
+                { "name": "Boult" },
+                { "name": "Bawd" },
+                { "name": "Pandar" },
+                { "name": "Lysimachus" },
+                { "name": "First Pirate" }
+            ]
+        },
+        {
+            "name": "Pandar",
+            "children": [
+                { "name": "Boult" },
+                { "name": "Bawd" },
+                { "name": "First Pirate" },
+                { "name": "Marina" },
+                { "name": "Lysimachus" }
+            ]
+        },
+        {
+            "name": "Second Gentleman",
+            "children": [
+                { "name": "First Gentleman" }
+            ]
+        },
+        {
+            "name": "Second Pirate",
+            "children": [
+                { "name": "Dionyza" },
+                { "name": "First Pirate" },
+                { "name": "Leonine" },
+                { "name": "Marina" },
+                { "name": "Third Pirate" }
+            ]
+        },
+        {
+            "name": "Third Pirate",
+            "children": [
+                { "name": "Dionyza" },
+                { "name": "First Pirate" },
+                { "name": "Leonine" },
+                { "name": "Marina" },
+                { "name": "Second Pirate" }
+            ]
+        }]
+        },
        {
-        "name": "Act 5"
-       }
+        "name": "Act 5",
+        "children": [{
+            "name": "Cerimon",
+            "children": [
+                { "name": "Thaisa" }, 
+                { "name": "Gower" }, 
+                { "name": "Helicanus" }, 
+                { "name": "Marina" },
+                { "name": "Pericles" }
+            ]
+        },
+        {
+            "name": "Diana",
+            "children": [
+                { "name": "First Gentleman" },
+                { "name": "First Lord" },
+                { "name": "Helicanus" },
+                { "name": "Lysimachus" },
+                { "name": "Marina" },
+                { "name": "Pericles" },
+                { "name": "Tyrian Sailor" }
+            ]
+        },
+        {
+            "name": "First Gentleman",
+            "children": [
+                { "name": "Diana" },
+                { "name": "First Lord" },
+                { "name": "Helicanus" },
+                { "name": "Lysimachus" },
+                { "name": "Marina" },
+                { "name": "Pericles" },
+                { "name": "Tyrian Sailor" }
+            ]
+        },
+        {
+            "name": "First Lord",
+            "children": [
+                { "name": "Diana" },
+                { "name": "First Gentleman" },
+                { "name": "Helicanus" },
+                { "name": "Lysimachus" },
+                { "name": "Marina" },
+                { "name": "Pericles" },
+                { "name": "Tyrian Sailor" }
+            ]
+        },
+        {
+            "name": "Gower",
+            "children": [
+                { "name": "Cerimon" },
+                { "name": "Helicanus" },
+                { "name": "Marina" },
+                { "name": "Pericles" },
+                { "name": "Thaisa" }
+            ]
+        },
+        {
+            "name": "Helicanus",
+            "children": [
+                { "name": "First Lord" },
+                { "name": "Pericles" },
+                { "name": "Diana" },
+                { "name": "First Gentleman" },
+                { "name": "Lysimachus" },
+                { "name": "Marina" },
+                { "name": "Tyrian Sailor" },
+                { "name": "Cerimon" },
+                { "name": "Gower" },
+                { "name": "Thaisa" }
+            ]
+        },
+        {
+            "name": "Marina",
+            "children": [
+                { "name": "Lysimachus" },
+                { "name": "Diana" },
+                { "name": "First Gentleman" },
+                { "name": "First Lord" },
+                { "name": "Helicanus" },
+                { "name": "Pericles" },
+                { "name": "Tyrian Sailor" },
+                { "name": "Cerimon" },
+                { "name": "Gower" },
+                { "name": "Thaisa" }
+            ]
+        },
+        {
+            "name": "Pericles",
+            "children": [
+                { "name": "First Lord" },
+                { "name": "Helicanus" },
+                { "name": "Thaisa" },
+                { "name": "Diana" },
+                { "name": "First Gentleman" },
+                { "name": "Lysimachus" },
+                { "name": "Marina" },
+                { "name": "Tyrian Sailor" },
+                { "name": "Cerimon" },
+                { "name": "Gower" }
+            ]
+        },
+        {
+            "name": "Thaisa",
+            "children": [
+                { "name": "Pericles" },
+                { "name": "Cerimon" },
+                { "name": "First Gentleman" },
+                { "name": "Gower" },
+                { "name": "Helicanus" },
+                { "name": "Marina" }
+            ]
+        },
+        {
+            "name": "Tyrian Sailor",
+            "children": [
+                { "name": "Diana" },
+                { "name": "First Gentleman" },
+                { "name": "First Lord" },
+                { "name": "Helicanus" },
+                { "name": "Lysimachus" },
+                { "name": "Marina" },
+                { "name": "Pericles" }
+            ]
+        }
+        ]}
     ]
 }
