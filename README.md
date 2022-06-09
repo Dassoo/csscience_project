@@ -8,8 +8,6 @@ It features a little website using CSS, Cytoscape.js, D3.js and Chart.js, showin
 
 Tools used: 
   > Google Colab: https://colab.research.google.com// <br />
-  > Visual Studio Code: https://code.visualstudio.com/ <br />
   > Chart.js: https://www.chartjs.org/ <br />
   > Cytoscape.js: https://js.cytoscape.org/ <br />
   > D3.js: https://d3js.org/ <br />
-  > GitHub: https://github.com/ <br />
